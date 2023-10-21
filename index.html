@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span> Sha</span>lini<br>Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        
+            <div class="header-text">
+                
+                <h1>Hii,I'm <span>Shalini</span> Singh<br> From India</h1>
+            </div>
+        </div>
+    </div>
+   <!---------about--------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="girl2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am pursuing my bachlores degree in Computer Application.I am self-motivated learner with a passion for coading and proven ability to develop innovative and creative products and solutions. Currently I am working on small project in NazraSoft. </p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Project</p>
+                        <p class="tab-links" onclick="opentab(' qualification')"> Qualification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Language</span><br>Knowledge of C, C++, Java & DataStructure.</li>
+                            <li><span>SQL</span><br>Knowledge of SQL and DataBase</li>
+                            <li><span>MS Office</span><br>Knowledge of MS Word<br> MS Excel, PowerPoint, MS Access</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>Project1</span><br>Creating Bihar Tourism Website.</li>
+                            <li><span>Project2</span><br>Creating landing page of International Travel Agency.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id=" qualification">
+                        <ul>
+                            <li><span>2019</span><br>Matriculation(CBSE)<br> in G D Mission Public School.</li>
+                            <li><span>2019-2021</span><br>Intermediate(BSEB)<br> D B S D College.</li>
+                            <li><span>2021-2024</span><br>Patliputra University<br>J D Womens College BCA(3rd Year).</li>
+                            
+                        </ul>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-------------experience-------->
+
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title">My Experience</h1>
+            <div class="experience-list">
+            <div>
+                <h2>Project 1</h2>
+                <p>Creating Bihar Tourism Site Duration: Two Week. Technologies Used: HTML, CSS & JavaScript. This is my first computer project. I felt very happy to complete my first project.This website has information about all the tourist place of Bihar.
+                <a herf="#">Learn more</a>
+            </div>
+            
+            <div>
+                <h2>Project 2</h2>
+                <p>Creating Landing Page of International Travel Agency. Duration: One Week. Technologies Used :HTML&CSS. This is my second computer project. I made this project as a task for Internship NazraSoft and this is my second computer project experience.</p>
+                <a herf="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Project 3</h2>
+                <p>Making my own portfolio. Duration: one Week. Technologies Used: HTML, CSS & Java Script. This is my third computer project experience. </p>
+                <a herf="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>singhshalini841311@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>985292025</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Patna</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"></a><i class="fa-brands fa-facebook"></a></i> <i class="fa-brands fa-linkedin"></i>  <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-github"></i>
+                        
+
+                    </div>
+                    <a href="MyResume.pdf"  download class="btn btn2">Download CV</a>
+                    </div>
+                
+                
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> @ copyright shalini.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    
+</body>
+</html>
